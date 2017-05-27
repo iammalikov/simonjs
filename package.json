@@ -1,0 +1,14 @@
+{
+  "name": "SimonJS",
+  "version": "1.0.0",
+  "description": "This is a simple game called “Simon says”. I wrote it for practice of coding.",
+  "main": "index.html",
+  "author": "Ilya Malikov",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "browser-sync": "^2.18.8"
+  }
+}

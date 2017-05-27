@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <title>SimonJS</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i" rel="stylesheet">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <div class="logo__name">SimonJS</div>
+                    <div class="logo__subname">Inspired by the original</div>
+                </div>
+                <div class="scoreboard">
+                    <div class="scoreboard__item">Best:&nbsp;<span id="best" class="scoreboard__number">0</span></div>
+                    <div class="scoreboard__item">Score:&nbsp;<span id="score" class="scoreboard__number">0</span></div>
+                </div>
+            </div>
+            <div class="simon">
+                <button data-btn="0" class="simon__btn simon__btn_out-game simon__btn_red">0</button>
+                <button data-btn="1" class="simon__btn simon__btn_out-game simon__btn_green">1</button>
+                <button data-btn="2" class="simon__btn simon__btn_out-game simon__btn_blue">2</button>
+                <button data-btn="3" class="simon__btn simon__btn_out-game simon__btn_yellow">3</button>
+                <div id="message" class="message message_active">
+                    <div id="msg-title" class="message__title">Game Over</div>
+                    <button id="start-game" class="btn">New Game</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer__rules"><strong>HOW TO PLAY:</strong> repeat flashing LIGHTS&nbsp;and&nbsp;SOUNDS!</div>
+                <div class="footer__develop">Developed <a class="link" href="https://github.com/IlyakorMostovoy">Ilya Malikov</a></div>
+            </div>
+            <audio data-sound="0" src="sound/simonSound1.mp3" preload="auto"></audio>
+            <audio data-sound="1" src="sound/simonSound2.mp3" preload="auto"></audio>
+            <audio data-sound="2" src="sound/simonSound3.mp3" preload="auto"></audio>
+            <audio data-sound="3" src="sound/simonSound4.mp3" preload="auto"></audio>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  margin: 0;
+  color: #555;
+  background: #faf8ef; }
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 40px 10px 50px; }
+
+.header {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfd4c1; }
+  .header:after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+.logo {
+  float: left;
+  text-align: center; }
+  .logo__name {
+    font-size: 32px;
+    font-weight: 600; }
+  .logo__subname {
+    font-size: 12px; }
+
+.scoreboard {
+  font-size: 0;
+  float: right;
+  margin-top: 8px; }
+  .scoreboard__item {
+    font-size: 16px; }
+    .scoreboard__item:first-child {
+      margin-bottom: 3px; }
+  .scoreboard__number {
+    font-weight: 600; }
+
+.simon {
+  font-size: 0;
+  position: relative;
+  padding: 5px; }
+  .simon__btn {
+    font-size: 0;
+    display: inline-block;
+    width: 135px;
+    height: 135px;
+    margin: 5px;
+    cursor: default;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    border: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    outline: none; }
+    .simon__btn_active {
+      cursor: pointer; }
+    .simon__btn_out-game {
+      -webkit-border-radius: 0;
+      border-radius: 0; }
+    .simon__btn_green {
+      border: 3px solid #06d6a0;
+      background-color: #06d6a0; }
+      .simon__btn_green.click {
+        background-color: #70fbd7; }
+    .simon__btn_red {
+      border: 3px solid #ef476f;
+      background-color: #ef476f; }
+      .simon__btn_red.click {
+        background-color: #facad6; }
+    .simon__btn_yellow {
+      border: 3px solid #ffc43d;
+      background-color: #ffc43d; }
+      .simon__btn_yellow.click {
+        background-color: #ffefcc; }
+    .simon__btn_blue {
+      border: 3px solid #1b9aaa;
+      background-color: #1b9aaa; }
+      .simon__btn_blue.click {
+        background-color: #6cdae8; }
+    .simon__btn_end {
+      -webkit-animation: pulse 1.5s;
+      animation: pulse 1.5s; }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: .5; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: .5; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: visibility 0s, opacity .5s linear;
+  -o-transition: visibility 0s, opacity .5s linear;
+  transition: visibility 0s, opacity .5s linear;
+  opacity: 0;
+  background-color: rgba(238, 228, 218, 0.73); }
+  .message_active {
+    visibility: visible;
+    opacity: 1; }
+  .message_end {
+    background-color: rgba(238, 228, 218, 0.9); }
+  .message__title {
+    font-size: 32px;
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: none;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase; }
+    .message__title_active {
+      display: block; }
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #faf8ef;
+  border: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #555; }
+  .btn:hover {
+    background: #6f6f6f; }
+  .btn:focus, .btn:active {
+    outline: none; }
+
+.footer {
+  margin-top: 25px; }
+  .footer__rules {
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid #cfd4c1;
+    border-bottom: 1px solid #cfd4c1; }
+  .footer__develop {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 30px;
+    text-align: center;
+    color: #555; }
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+  color: #555;
+  border-bottom: 1px solid #bbbbbb; }
+  .link:hover {
+    border-bottom: 0; }
+
+@media (max-width: 375px) {
+  .container {
+    padding: 15px 10px 40px; } }
