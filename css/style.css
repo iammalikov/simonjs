@@ -60,6 +60,10 @@ body {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     outline: none; }
+    .simon__btn:focus {
+      outline: none; }
+    .simon__btn::-moz-focus-inner {
+      border: 0; }
     .simon__btn_active {
       cursor: pointer; }
     .simon__btn_out-game {
@@ -168,8 +172,10 @@ body {
   background: #555; }
   .btn:hover {
     background: #6f6f6f; }
-  .btn:focus, .btn:active {
+  .btn:focus {
     outline: none; }
+  .btn::-moz-focus-inner {
+    border: 0; }
 
 .footer {
   margin-top: 25px; }

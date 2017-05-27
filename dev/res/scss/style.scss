@@ -116,6 +116,14 @@ body
         border: 0;
         border-radius: 50%;
         outline: none;
+        &:focus
+        {
+            outline: none;
+        }
+        &::-moz-focus-inner
+        {
+            border: 0;
+        }
         &_active
         {
             cursor: pointer;
@@ -242,10 +250,13 @@ body
     {
         background: lighten($black, 10%);
     }
-    &:focus,
-    &:active
+    &:focus
     {
         outline: none;
+    }
+    &::-moz-focus-inner
+    {
+        border: 0;
     }
 }
 
